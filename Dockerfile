@@ -12,7 +12,7 @@ RUN go get github.com/robfig/glock
 RUN glock sync -n < GLOCKFILE
 RUN go install
 
-FROM alpine:3.16.0
+FROM alpine:3.18.0
 LABEL maintainer "mentos1386 <mentos1386@tjo.space>"
 LABEL org.opencontainers.image.source=https://github.com/mentos1386/docker-postgres-cron-backup
 LABEL org.opencontainers.image.licenses=Apache-2.0
