@@ -21,7 +21,7 @@ LABEL org.opencontainers.image.description="Docker image to backup all your data
 RUN apk add --update \
         tzdata \
         bash \
-        postgresql-client-15 \
+        postgresql-client \
         gzip \
         openssl && \
     rm -rf /var/cache/apk/*
