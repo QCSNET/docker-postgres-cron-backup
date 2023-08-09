@@ -1,7 +1,7 @@
 version: "2"
 services:
   postgres:
-    image: postgres:14
+    image: postgres:15
     container_name: my_postgres
     expose:
       - 5436
