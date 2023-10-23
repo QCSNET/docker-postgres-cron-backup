@@ -9,7 +9,7 @@ RUN git clone https://github.com/jwilder/dockerize.git && \
 
 WORKDIR /go/src/github.com/jwilder/dockerize
 RUN go get github.com/robfig/glock
-RUN glock sync -n < GLOCKFILE
+#RUN glock sync -n < GLOCKFILE
 RUN go install
 
 FROM alpine:3.18.0
