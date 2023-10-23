@@ -1,7 +1,7 @@
 FROM golang:1.15.8-alpine3.12 AS binary
 RUN apk -U add openssl git
 
-ARG DOCKERIZE_VERSION=v0.6.1
+ARG DOCKERIZE_VERSION=v0.7.0
 WORKDIR /go/src/github.com/jwilder
 RUN git clone https://github.com/jwilder/dockerize.git && \
     cd dockerize && \
