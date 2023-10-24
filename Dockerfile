@@ -7,6 +7,7 @@ RUN git clone https://github.com/jwilder/dockerize.git && \
     cd dockerize && \
     git checkout ${DOCKERIZE_VERSION}
 
+RUN apt install golang git
 WORKDIR /go/src/github.com/jwilder/dockerize
 RUN go get github.com/robfig/glock
 RUN glock sync -n < GLOCKFILE
